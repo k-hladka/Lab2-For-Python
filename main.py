@@ -15,3 +15,11 @@ if(year%400 == 0 and year%100==0):
     print("Цей рік є високосним")
 else:
     print("Цей рік не є високосним")
+
+# ***************      Task3       ****************
+price = float(input("Введіть ціну товару: "))
+if(price>=500 and price<1000):
+    price-=price *0.03
+elif (price>=1000):
+    price-= price* 0.05
+print(f"Ціна товару зі знижкою = {price}")
