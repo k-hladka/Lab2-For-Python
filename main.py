@@ -1,4 +1,4 @@
-from math import cos
+from math import cos, sin
 
 # ***************      Task1       ****************
 number1 = int(input("Введіть перше число: "))
@@ -35,3 +35,11 @@ for i in range(4):
         min = arr[i]
 
 print(f"Косинус мінімального з чисел ({min}) = {cos(min*3.14/180)}")
+
+# ***************      Task5       ****************
+arr2 = []
+for i in range(3):
+    arr2.append(float(input(f"Введіть {i + 1} із 3-х чисел: ")))
+    if (i == 0 or max < arr2[i]):
+        max = arr2[i]
+print(f"Cинус максимального з чисел ({max}) = {sin(max*3.14/180)}")
